@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_section_sections_two_colums",
+  "info": {
+    "displayName": "sections_two_colums",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 256,
+      "minLength": 5
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 256,
+      "minLength": 5,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "medata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section-medata",
+      "required": true
+    }
+  }
+}
